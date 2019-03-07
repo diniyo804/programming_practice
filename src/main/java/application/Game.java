@@ -7,11 +7,20 @@ import user.User;
 public class Game {
 
     private UserService userService = new UserServiceImple();
+    private Adventure adventure = new Adventure();
 
     public void start() {
 
         //캐릭터 생성 -> 조건 닉네임 입력
         User user = userService.newUser();
+        //종족 선택
+        user = userService.selectUserType(user);
+        //모험 시작
+        try {
+            user = adventure.start(user);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 }
