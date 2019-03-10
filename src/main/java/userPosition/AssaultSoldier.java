@@ -6,10 +6,12 @@ public class AssaultSoldier extends Position {
 
     public AssaultSoldier() {
         super.setPositionType(Rule.ASSAULT_SOLDIER);
+        super.setSpecialSkill(specialSkill());
     }
 
-    public void specialSkill() {
-        System.out.println(">[특수스킬시전] : 전방 30m내의 적에게 poison을 시전합니다.");
+    public String specialSkill() {
+        return "***** 30초동안 공격력 5배 증가 *****";
     }
 }
+
 

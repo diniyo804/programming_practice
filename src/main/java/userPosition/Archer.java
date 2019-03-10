@@ -4,15 +4,12 @@ import common.Rule;
 
 public class Archer extends Position {
 
-    //
     public Archer() {
-
         super.setPositionType(Rule.ARCHER);
+        super.setSpecialSkill(specialSkill());
     }
 
-    //
-    public void specialSkill() {
-
-        System.out.println(">[특수스킬시전] : 화살을 50샷 발사합니다.");
+    public String specialSkill() {
+        return "***** 화살 50샷 발사 *****";
     }
 }
