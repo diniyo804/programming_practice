@@ -24,7 +24,7 @@ public class Rule {
     public static final String HEALER ="HEALER";
     public static final String ARCHER = "ARCHER";
 
-    //무기 속성
+    //무기 내구도
     public static final int BASIC_DURABLIITY = 100;
 
 
