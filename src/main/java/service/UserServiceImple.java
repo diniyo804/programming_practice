@@ -100,6 +100,7 @@ public class UserServiceImple implements UserService {
             if (pick == 1) position = new Healer();
             else if (pick == 2) position = new Archer();
         }
+        System.out.println(">" + position.getPositionType() + "(으)로 전직하였습니다.");
         user.setPosition(position);
         return user;
     }
