@@ -3,8 +3,9 @@ package userPosition;
 import common.Rule;
 
 public class Warrior extends Position {
+
     public Warrior() {
-        super.setPositionType(Rule.WARRIOR);
+        this.setPositionType(Rule.WARRIOR);
     }
 
     public void specialSkill() {
