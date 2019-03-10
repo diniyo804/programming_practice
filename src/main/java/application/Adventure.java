@@ -47,6 +47,7 @@ public class Adventure {
 
         }
 
+        //최고레벨일경우 전직
         if(user.isMaxLevel()) {
             System.out.println("전직을 하십시오 :"  + user.getLevel());
             user = service.newPosition(user);
