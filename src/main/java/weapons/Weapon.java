@@ -11,18 +11,33 @@ public class Weapon {
     //공격범위(사거리)
     private int rangeOfAttack;
 
-    //기본공격을 한다.
-//    public int sAttack(){
-//
-//    };
 
-    //특수 스킬 사용
+    //
+    //내구성체크 0보다 크면 사용가능
+    public boolean durabilityCheck() {
+        System.out.println(">무기내구도 : " + durability);
+        if (this.durability > 0) return true;
+        return false;
+    }
+
+    //공격시 (내구도 -1)
+    public void subDurability() {
+        this.durability -= 1;
+    }
 
 
-    //내구성체크 0인지 아닌지
-    //public boolean check
+    // getter and setter
+    public int getDurability() {
+        return durability;
+    }
 
-
-
-
+    public void setDurability(int durability) {
+        this.durability = durability;
+    }
 }
+
+
+
+//특수 스킬 사용
+
+
