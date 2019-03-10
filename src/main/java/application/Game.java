@@ -17,10 +17,14 @@ public class Game {
         user = userService.selectUserType(user);
         //모험 시작
         try {
-            user = adventure.start(user);
+            user = adventure.firstAdventure(user);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        //전직 후 두번째 모험
+        user = adventure.SecondAdventure(user);
+
 
     }
 }
